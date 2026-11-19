@@ -1,0 +1,15 @@
+# PyTorch is installed separately by the setup script (CUDA build for the RTX 4050).
+timm
+onnx
+onnxruntime
+onnxscript
+optuna
+pandas
+matplotlib
+psutil
+pillow
+jupyterlab
+ipykernel
+nbclient
+nbformat
+reportlab

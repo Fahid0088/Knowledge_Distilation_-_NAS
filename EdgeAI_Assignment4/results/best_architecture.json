@@ -1,0 +1,62 @@
+{
+  "config": {
+    "resolution": 32,
+    "stem_channels": 24,
+    "stem_act": "silu",
+    "blocks": [
+      {
+        "type": "conv",
+        "out": 16,
+        "k": 5,
+        "act": "silu",
+        "stride": 1
+      },
+      {
+        "type": "conv",
+        "out": 16,
+        "k": 5,
+        "act": "hardswish",
+        "stride": 1
+      },
+      {
+        "type": "conv",
+        "out": 128,
+        "k": 5,
+        "act": "relu6",
+        "stride": 2
+      },
+      {
+        "type": "dwsep",
+        "out": 48,
+        "k": 5,
+        "act": "silu",
+        "stride": 2
+      },
+      {
+        "type": "conv",
+        "out": 96,
+        "k": 5,
+        "act": "relu6",
+        "stride": 1
+      },
+      {
+        "type": "dwsep",
+        "out": 32,
+        "k": 5,
+        "act": "silu",
+        "stride": 1
+      }
+    ]
+  },
+  "search_val_acc": 0.6596,
+  "score": 0.6292229500094999,
+  "latency_ms": 2.871149998100009,
+  "size_mb": 0.801065,
+  "peak_mem_mb": 10.4453125,
+  "params": 199362,
+  "constraints": {
+    "max_latency_ms": 10.0,
+    "max_size_mb": 1.0,
+    "max_peak_mem_mb": 200.0
+  }
+}

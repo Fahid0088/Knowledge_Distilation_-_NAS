@@ -1,0 +1,4 @@
+student,baseline_acc,distilled_acc,kd_gain
+MobileNetV2,56.04,55.92,-0.11999999999999789
+SqueezeNet,53.33,50.8,-2.529999999999999
+EfficientNet-Lite0,54.58,57.47,2.8900000000000037

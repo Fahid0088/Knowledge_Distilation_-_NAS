@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "quick_test": false,
+  "teacher_epochs": 15,
+  "student_epochs": 20,
+  "nas_trials": 30,
+  "nas_candidate_epochs": 4,
+  "nas_train_samples": 15000,
+  "nas_final_epochs": 30,
+  "ort_eval_samples": 2000,
+  "teacher_batch_size": 64,
+  "torch_version": "2.6.0+cu126",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU"
+}
